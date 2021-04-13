@@ -1,6 +1,6 @@
 import pandas as pd
 import pytest
-df = pd.read_csv("./data/train.csv")
+df = pd.read_csv("train.csv")
 
 
 def test_Gender():
