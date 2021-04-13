@@ -1,3 +1,8 @@
+import pandas as pd
+import pytest
+df = pd.read_csv("./data/train.csv")
+
+
 def test_Gender():
     assert df['Gender'].unique().tolist()==['male','Female']
 
