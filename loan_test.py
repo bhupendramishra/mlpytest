@@ -4,10 +4,10 @@ df = pd.read_csv("train.csv")
 
 
 def test_Gender():
-    assert df['Gender'].unique().tolist()==['male','Female']
+    assert df['Gender'].unique().tolist()==['Male','Female']
 
 def test_Married():
-    assert df["Married"].unique().tolist()==['Yes','No']
+    assert df['Married'].unique().tolist()==['Yes','No']
 
 def test_ApplicantIncome():
     assert df[df['ApplicantIncome'] <0].shape[0] ==0
